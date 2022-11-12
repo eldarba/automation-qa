@@ -23,10 +23,10 @@ class MainUnitJupiter {
 			System.setProperty("webdriver.chrome.driver", "src/main/resources/drivers/chromedriver.exe");
 			// open browser
 			webDriver = new ChromeDriver();
-//			TimeUnit.MILLISECONDS.sleep(200);
+			TimeUnit.MILLISECONDS.sleep(200);
 			// maximize window
-//			webDriver.manage().window().maximize();
-//			TimeUnit.SECONDS.sleep(1);
+			webDriver.manage().window().maximize();
+			TimeUnit.SECONDS.sleep(1);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
